@@ -14,14 +14,14 @@ def password_is_valid_old_rules(dataset):
     
     # Variablen:
     # - password: string
-    # - ruleLetter: string
+    # - ruleLetter: string (a-z)
     # - lowerLimit, upperLimit: int
     
     # Anzahl Buchstaben zwischen beiden Limits
     return lowerLimit <= password.count(ruleLetter) <= upperLimit
 
 
-# Teil 1: Anzahl korrekter Passwörter
+# Anzahl korrekter Passwörter nach falschen Regeln
 numCorrect = 0
 for password in input:
     if password_is_valid_old_rules(password):
@@ -44,7 +44,7 @@ def password_is_valid_new_rules(dataset):
     return (password[firstPos - 1] == ruleLetter) ^ (password[secondPos - 1] == ruleLetter)
     
 
-# Teil 2: Anzahl korrekter Passwörter nach neuen Regeln
+# Anzahl korrekter Passwörter nach neuen Regeln
 numCorrect = 0
 for password in input:
     if password_is_valid_new_rules(password):
