@@ -45,6 +45,7 @@ for seatDefinition in input:
     seatIdList.append(currentSeatFinder.getSeatId())
 maxSeatId = max(seatIdList)
 
+# 835
 print(f"Höchste Sitzplatz-ID: {maxSeatId}")
 
 
@@ -61,4 +62,5 @@ def findMySeat(seatIdList):
                 # Nach gefundenem Sitzplatz weitere Suche stoppen
                 return
 
+# 649
 findMySeat(seatIdList)
