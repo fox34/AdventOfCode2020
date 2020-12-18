@@ -17,10 +17,11 @@ for num in input:
 # Teil 1: 2020
 #numRounds = 2020
 # Teil 2: 30000000
-numRounds = 30000000
+numRounds = 30_000_000
 # i *nicht* zurücksetzen
 while i <= numRounds:
     
+    # Statusanzeige
     if i % 1000000 == 0:
         print(f"Runde {i}")
     

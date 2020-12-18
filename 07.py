@@ -37,9 +37,7 @@ class BagParser:
                     resolvedContents[name2] = amount * amount2
         
         return resolvedContents
-    
-    def canContainShinyGoldBag(self):
-        pass
+
 
 # Einlesen
 bagProperties = {}
